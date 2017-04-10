@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_selector">
+<include
+    layout="@layout/title_util_layout"/>
+<EditText
+    android:id="@+id/et_setName"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/ed_password"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:textSize="14sp"
+    android:hint="请输入昵称"
+    android:maxLength="16"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最多只能输入16字符"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+</LinearLayout>

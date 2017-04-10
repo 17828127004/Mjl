@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        applicationId "com.hyc.mjl"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.01"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+repositories{
+    flatDir{
+        dirs 'libs'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.loopj.android:android-async-http:1.4.5'
+    compile 'com.foamtrace:photopicker:1.0'
+    compile files('libs/AMap_Location_V3.3.0_20170118.jar')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.xhb:xbanner:1.2.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.fynn.fluidlayout:fluidlayout:1.0'
+}

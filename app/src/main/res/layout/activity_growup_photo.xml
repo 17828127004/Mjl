@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/title_util_layout" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@drawable/photo_bj">
+
+            <TextView
+                android:id="@+id/tv_growup_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@+id/iv_growUP_PhotoHeard"
+                android:textSize="14sp"
+                android:textColor="@color/bg_white"
+                android:layout_marginBottom="25dp"
+                android:layout_marginRight="6dp"/>
+            <ImageView
+                android:id="@+id/iv_growUP_PhotoHeard"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/happy_mine"
+                android:scaleType="centerCrop"
+                />
+        </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天"
+        android:textSize="22sp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:id="@+id/iv_growUP_PhotoCamera"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_camera"
+        android:layout_marginLeft="10dp"/>
+</LinearLayout>
+    <util.ListViewForScrollView
+        android:id="@+id/lv_grow_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:dividerHeight="5dp"
+        android:divider="@color/bg_white"
+        />
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

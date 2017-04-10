@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <view.wheel.MyRlayout
+        android:id="@+id/item_rlRanKing_bj"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <TextView
+            android:id="@+id/item_tvRanking_num"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_ranking_num"
+            android:gravity="center"
+            android:text="TOP 1"
+            android:textColor="@color/bg_white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_tvRanking_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="6dp"
+            android:text="开心哈乐(世纪城店)"
+            android:textColor="@color/bg_white"
+            android:textSize="18sp" />
+    </view.wheel.MyRlayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ranking_store_bj1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ranking_ic_bj"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="综合评分"
+                android:textColor="@color/tab_text_bg"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_tvRanking_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="4.8"
+                android:textColor="@color/red_title"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@drawable/ranking_ic_bj1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="236 人好评"
+                    android:textColor="@color/red_title"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp"
+                >
+                <TextView
+                    android:id="@+id/item_lab7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/ranking_lable_bj"
+                    android:text="卫生合格"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:textColor="@color/tab_text_bg"
+                    android:visibility="visible"/>
+                <TextView
+                    android:id="@+id/item_lab8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ranking_lable_bj"
+                    android:gravity="center"
+                    android:text="服务态度好"
+                    android:textSize="11sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/tab_text_bg"
+                    android:visibility="visible"/>
+                <TextView
+                    android:id="@+id/item_lab9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/ranking_lable_bj"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="质量好"
+                    android:textSize="11sp"
+                    android:textColor="@color/tab_text_bg"
+                    android:visibility="visible"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:id="@+id/item_lab10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ranking_lable_bj"
+                    android:text="店铺干净"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:textColor="@color/tab_text_bg"
+                    android:visibility="visible"/>
+                <TextView
+                    android:id="@+id/item_lab11"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ranking_lable_bj"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="售后不错"
+                    android:textSize="11sp"
+                    android:textColor="@color/tab_text_bg"
+                    android:visibility="visible"
+                    />
+                <TextView
+                    android:id="@+id/item_lab12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/ranking_lable_bj"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="星级店铺"
+                    android:textSize="11sp"
+                    android:textColor="@color/tab_text_bg"
+                    android:visibility="visible"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/item_Llranking3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="8dp"></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

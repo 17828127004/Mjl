@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_white">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center_vertical">
+    <ImageView
+        android:id="@+id/item_myTime_imag"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/item_myTime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="科华南路店"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/item_myTime_imag"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:id="@+id/item_myTime_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016-02-08 15:30"
+        android:textSize="14sp"
+        android:layout_below="@+id/item_myTime_tv"
+        android:layout_toRightOf="@+id/item_myTime_imag"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/time_txt"
+        android:layout_marginTop="3dp"/>
+    <TextView
+        android:id="@+id/item_myTime_timeTing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="预约中"
+        android:textColor="@color/red_title"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/item_myTime_imag"
+        android:background="@color/bg_selector"
+        android:layout_marginTop="5dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="20dp"
+        >
+        <TextView
+            android:id="@+id/item_timetingInfor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="弗格森的复苏的斯蒂芬"
+            android:textColor="@color/time_txt"/>
+    </RelativeLayout>
+</LinearLayout>

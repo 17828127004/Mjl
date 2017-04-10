@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        layout="@layout/title_util_layout"/>
+    <TextView
+        android:id="@+id/tv_MsgTwo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="店铺消息"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/tv_msgTow_content"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:gravity="left"
+        android:padding="10dp"
+        android:background="@drawable/rec_shape"
+        android:text="梵蒂冈豆腐干打发时光放大工地发生过梵蒂冈地方光的反射"
+        android:singleLine="false"
+        />
+
+</LinearLayout>

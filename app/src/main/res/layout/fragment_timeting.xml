@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_fragment_time"
+    android:background="@color/bg_white">
+
+    <include layout="@layout/title_util_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_timeOne"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/timeing"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/item_tvMonth1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1月"
+                android:textSize="14sp"
+                android:textColor="@color/time_title"
+                android:paddingTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/item_tvDay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_tvMonth1"
+                android:text="01"
+                android:paddingTop="3dp"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:paddingLeft="2dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_timeTwo"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/timeing_no"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/item_tvMonth2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1月"
+                android:textSize="14sp"
+                android:paddingTop="10dp"
+                android:textColor="@color/tixt"
+                />
+
+            <TextView
+                android:id="@+id/item_tvDay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_tvMonth2"
+                android:text="18"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:paddingTop="3dp"
+                android:paddingLeft="2dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_timeThree"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/timeing_no"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/item_tvMonth3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1月"
+                android:textSize="14sp"
+                android:paddingTop="10dp"
+                android:textColor="@color/tixt"/>
+
+            <TextView
+                android:id="@+id/item_tvDay3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_tvMonth3"
+                android:text="18"
+                android:textSize="22sp"
+                android:paddingLeft="2dp"
+                android:paddingTop="3dp"
+                android:textColor="@color/white"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_timeFour"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/timeing_no"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/item_tvMonth4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1月"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:paddingTop="10dp"
+                android:textColor="@color/tixt"/>
+
+            <TextView
+                android:id="@+id/item_tvDay4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_tvMonth4"
+                android:text="18"
+                android:textSize="22sp"
+                android:paddingLeft="2dp"
+                android:paddingTop="3dp"
+                android:textColor="@color/white"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_timeFive"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/timeing_no"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/item_tvMonth5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1月"
+                android:textSize="14sp"
+                android:paddingTop="10dp"
+                android:textColor="@color/tixt"/>
+
+            <TextView
+                android:id="@+id/item_tvDay5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_tvMonth5"
+                android:text="18"
+                android:textSize="22sp"
+                android:paddingLeft="2dp"
+                android:paddingTop="3dp"
+                android:textColor="@color/white"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_timeTing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

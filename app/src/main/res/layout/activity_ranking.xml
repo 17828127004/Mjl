@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ranking_bj">
+<include
+    layout="@layout/title_util_layout"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="门店热榜"
+        android:textColor="@color/bg_white"
+        android:textSize="30sp"
+        android:padding="20dp"/>
+    <ListView
+        android:id="@+id/lv_ranKing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="40dp"
+        android:layout_marginLeft="10dp"
+        android:divider="@null"
+        android:layout_marginRight="10dp"></ListView>
+</LinearLayout>

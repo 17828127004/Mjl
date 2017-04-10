@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_selector">
+
+   <include
+       layout="@layout/title_util_layout"/>
+
+    <EditText
+        android:id="@+id/et_uploadContent"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="left|top"
+        android:hint="这一刻的想法..."
+        android:padding="10dp"
+        android:background="@color/bg_white" >
+    </EditText>
+
+    <GridView
+        android:id="@+id/noScrollgridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="5dp"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp"
+        android:background="@color/bg_white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_white">
+        <ImageView
+            android:id="@+id/iv_addPhoto"
+            android:layout_width="67dp"
+            android:layout_height="85dp"
+            android:src="@drawable/add_photo"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

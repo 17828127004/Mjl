@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue_title">#5EB1FF</color>
+    <color name="tab_text_bg">#828282</color>
+    <color name="tab_bg">#FB785A</color>
+    <color name="red_title">#F06060</color>
+    <color name="title">#4C909D</color>
+    <color name="bg_selector">#F1F1F1</color>
+    <color name="bg_white">#ffffffff</color>
+    <color name="view">#DDDDDD</color>
+    <color name="text_bg">#D7D7D7</color>
+    <!--首页 新闻中心-->
+<color name="tab_bj">#F6F6F6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#be002f</color>
+    <color name="tixt">#989898</color>
+    <color name="home_red">#F27C7C</color>
+    <!--预约-->
+    <color name="time">#F4F4F4</color>
+    <color name="time_txt">#595959</color>
+    <color name="time_title">#14BDCD</color>
+    <!--修改密码-->
+    <color name="setpassword_code">#8C8C8C</color>
+    <!-- 上传图片添加的颜色 -->
+    <color name="none_color">#00000000</color>
+    <color name="plugin_camera_black">#000000</color>
+    <color name="albumback">#E1E0DE</color>
+    <color name="blue">#0000ff</color><!--蓝色 -->
+    <color name="action_text_color_normal">#cfcfcf</color>
+    <color name="action_text_color_pressed">#353535</color>
+    <color name="action_text_color_enabled">#818585</color>
+    <color name="transparent">#00000000</color>
+</resources>

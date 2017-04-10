@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_selector"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_storeMsg_bj"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/iv_storeMsg_back"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/happy_mine_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="8sp"
+                android:text="门店信息"
+                android:textColor="@color/bg_white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/bg_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_storeMsg_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="科华南路门店"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_storeMsg_start1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/start" />
+
+            <ImageView
+                android:id="@+id/iv_storeMsg_start2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/start" />
+
+            <ImageView
+                android:id="@+id/iv_storeMsg_start3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/start" />
+
+            <ImageView
+                android:id="@+id/iv_storeMsg_start4"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/start" />
+
+            <ImageView
+                android:id="@+id/iv_storeMsg_start5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/start_no" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/bg_selector" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_storeMsg_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="地址：四川省成都市天府二街世豪广场5楼"
+                android:textColor="@color/tab_text_bg"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/bg_selector" />
+
+            <ImageView
+                android:id="@+id/iv_storeMsg_phone"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_phone"
+
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/bg_selector" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_store"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_wift" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:layout_marginTop="4px"
+                android:layout_toRightOf="@+id/iv_store"
+                android:text="WIFI"
+                android:textColor="@color/tab_text_bg"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/iv_store"
+                android:layout_marginTop="5dp"
+                android:background="@color/bg_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_storeMsg_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4px"
+                android:text="营业时间：10：00-22：00"
+                android:textColor="@color/tab_text_bg"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/tv_storeMsg_time"
+                android:layout_marginTop="4dp"
+                android:background="@color/bg_selector" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="项目介绍"
+            android:textColor="@color/tab_text_bg"
+            android:textSize="14sp" />
+
+        <com.fynn.fluidlayout.FluidLayout
+            android:id="@+id/tcl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_storeMsg_time"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/btn_orange_selector_timeting"
+            android:text="预约门店"
+            android:textColor="@color/bg_white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

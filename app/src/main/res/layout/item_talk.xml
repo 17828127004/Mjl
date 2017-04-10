@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <util.RoundedImageView
+            android:id="@+id/item_talk_iv"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            >
+            <TextView
+                android:id="@+id/item_talk_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="科华南路店"
+                android:textColor="@color/tixt"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/item_talk_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:text="消费35元"
+                android:textColor="@color/tixt"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/item_talk_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="2017-1-17   11:30:30"
+                android:textColor="@color/tixt"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/item_talk_iv2"
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:textColor="@color/white"
+                android:src="@drawable/go_talk"
+                android:scaleType="centerCrop"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/view"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>
