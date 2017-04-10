@@ -2,15 +2,19 @@ package util;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 import com.kxhl.R;
 
 import java.util.List;
+
+import util.entity.UPMarqueeViewData;
 
 /**
  * 仿淘宝首页的 淘宝头条滚动的自定义View
@@ -21,7 +25,7 @@ public class UPMarqueeView extends ViewFlipper {
 
     private Context mContext;
     private boolean isSetAnimDuration = false;
-    private int interval = 2000;
+    private int interval = 3000;
     /**
      * 动画时间
      */
@@ -47,23 +51,43 @@ public class UPMarqueeView extends ViewFlipper {
     /**
      * 设置循环滚动的View数组
      *
-     * @param views
+     * @param
      */
-    public void setViews(final List<View> views) {
-        if (views == null || views.size() == 0) return;
+    public void setViews(final List<UPMarqueeViewData> datas) {
+        if (datas == null || datas.size() == 0) return;
         removeAllViews();
-        for (int i = 0; i < views.size(); i++) {
+        int size = datas.size();
+        for (int i = 0; i < size; i += 2) {
             final int position = i;
-            //设置监听回调
-            views.get(i).setOnClickListener(new OnClickListener() {
+            //根布局
+            LinearLayout item = (LinearLayout) LayoutInflater.from(mContext).inflate(R.layout.item_view, null);
+            //设置监听
+            item.findViewById(R.id.rl).setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     if (onItemClickListener != null) {
-                        onItemClickListener.onItemClick(position, views.get(position));
+                        onItemClickListener.onItemClick(position);
                     }
                 }
             });
-            addView(views.get(i));
+
+            //控件赋值
+            ((TextView) item.findViewById(R.id.tv1)).setText(datas.get(position).getValue());
+            ((TextView) item.findViewById(R.id.title_tv1)).setText(datas.get(position).getTitle());
+            //当数据是奇数时，最后那个item仅有一项
+            if (position + 1 < size) {
+                item.findViewById(R.id.rl2).setOnClickListener(new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (onItemClickListener != null) {
+                            onItemClickListener.onItemClick(position+1);
+                        }
+                    }
+                });
+                ((TextView) item.findViewById(R.id.tv2)).setText(datas.get(position + 1).getValue());
+                ((TextView) item.findViewById(R.id.title_tv2)).setText(datas.get(position + 1).getTitle());
+            } else item.findViewById(R.id.rl2).setVisibility(View.GONE);
+            addView(item);
         }
         startFlipping();
     }
@@ -86,6 +110,6 @@ public class UPMarqueeView extends ViewFlipper {
      * item_view的接口
      */
     public interface OnItemClickListener {
-        void onItemClick(int position, View view);
+        void onItemClick(int position);
     }
 }

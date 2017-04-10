@@ -187,14 +187,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:background="@drawable/news">
 
-           <util.UPMarqueeView
-               android:id="@+id/uv"
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:background="@drawable/news"
-               android:paddingLeft="85dp"></util.UPMarqueeView>
+                <util.UPMarqueeView
+                    android:id="@+id/upview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="83dp"
+                    ></util.UPMarqueeView>
             </LinearLayout>
 
             <View
