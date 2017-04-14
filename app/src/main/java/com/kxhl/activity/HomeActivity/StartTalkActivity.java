@@ -57,6 +57,7 @@ public class StartTalkActivity extends Activity implements View.OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start_talk);
+        Config.setTranslucent(this);
         new TitleUtil(this).setTitleName("星级评价").setLeftImage(R.drawable.happy_mine_back).
                 setLeftOnClickListener(new View.OnClickListener() {
                     @Override

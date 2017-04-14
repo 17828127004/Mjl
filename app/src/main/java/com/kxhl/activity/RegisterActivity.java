@@ -39,6 +39,7 @@ public class RegisterActivity extends Activity implements View.OnClickListener {
                         finish();
                     }
                 });
+        Config.setTranslucent(this);
         initView();
     }
 

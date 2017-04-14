@@ -23,6 +23,7 @@ import org.apache.http.Header;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import util.Config;
 import util.KxhlRestClient;
 import util.TitleUtil;
 import util.UrlLIst;
@@ -56,6 +57,7 @@ public class RegisterInfoActivity extends Activity {
                         finish();
                     }
                 });
+        Config.setTranslucent(this);
         Intent i = getIntent();
         mPhone = i.getStringExtra("phone");
         initView();

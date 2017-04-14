@@ -9,6 +9,8 @@ import com.kxhl.R;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import util.Config;
+
 /**
  * Created by Administrator on 2017/3/10.
  */
@@ -17,6 +19,7 @@ public class WelcomeActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+        Config.setTranslucent(this);
         final Intent intent=new Intent(this,MainActivity.class);
         Timer timer=new Timer();
         TimerTask task=new TimerTask() {

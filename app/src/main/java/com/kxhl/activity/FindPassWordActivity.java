@@ -17,6 +17,7 @@ import org.apache.http.Header;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import util.Config;
 import util.KxhlRestClient;
 import util.TitleUtil;
 import util.UrlLIst;
@@ -39,6 +40,7 @@ public class FindPassWordActivity extends Activity {
                    finish();
                     }
                 });
+        Config.setTranslucent(this);
         et_passWord=(EditText)findViewById(R.id.et_findPassWord);
         et_phone=(EditText)findViewById(R.id.et_findPhone);
         btn=(Button)findViewById(R.id.btn_findPassword);

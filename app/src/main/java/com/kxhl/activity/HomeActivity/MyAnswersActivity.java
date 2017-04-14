@@ -57,6 +57,7 @@ public class MyAnswersActivity extends Activity {
                         startActivity(new Intent(MyAnswersActivity.this, AnswersActivity.class));
                     }
                 });
+        Config.setTranslucent(this);
         lv_myAnswers = (ListView) findViewById(R.id.lv_myAnswers);
 
     }

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/titlepg"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="70dp"
     android:background="@color/title"
     android:paddingBottom="5dp"
     android:paddingTop="5dp" >
@@ -13,7 +13,9 @@
         android:layout_height="22dp"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
-        android:layout_marginLeft="10dp" />
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"/>
 
     <TextView
         android:id="@+id/titlepg_left_tv"
@@ -24,7 +26,9 @@
         android:layout_marginLeft="10dp"
         android:clickable="true"
         android:textColor="@color/bg_white"
-        android:textSize="17sp" />
+        android:textSize="17sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"/>
 
     <TextView
         android:id="@+id/titlepg_between_tv"
@@ -34,7 +38,9 @@
         android:textColor="@color/bg_white"
         android:padding="7sp"
         android:textSize="17sp"
-        android:visibility="visible"/>
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"/>
 
     <ImageView
         android:id="@+id/titlepg_right_iv"
@@ -42,7 +48,9 @@
         android:layout_height="22dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"/>
 
     <TextView
         android:id="@+id/titlepg_right_tv"
@@ -54,6 +62,8 @@
         android:clickable="true"
         android:textColor="@color/bg_white"
         android:padding="7sp"
-        android:textSize="17sp"/>
+        android:textSize="17sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"/>
 
 </RelativeLayout>

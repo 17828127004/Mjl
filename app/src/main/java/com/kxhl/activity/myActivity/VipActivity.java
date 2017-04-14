@@ -52,6 +52,7 @@ public class VipActivity extends Activity {
                    finish();
                     }
                 });
+        Config.setTranslucent(this);
         iv_vipCard=(ImageView)findViewById(R.id.iv_vipCard);
         tv_vipNumm=(TextView)findViewById(R.id.tv_vipNumm);
         tv_vipDW=(TextView)findViewById(R.id.tv_vipDW);

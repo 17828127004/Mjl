@@ -90,6 +90,7 @@ public class HomePageFragment extends Fragment implements View.OnClickListener {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         layoutView = inflater.inflate(R.layout.fragment_homepage, container, false);
         new TitleUtil(layoutView).setTitleName("首页");
+        Config.setTranslucent(getActivity());
         dialog = new LoadingDialog(getActivity());
         data = new ArrayList<UPMarqueeViewData>();
         dialog.show();

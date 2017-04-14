@@ -51,6 +51,7 @@ public class MyQuizActivity extends Activity{
                         startActivity(new Intent(MyQuizActivity.this,AnswersActivity.class));
                     }
                 });
+        Config.setTranslucent(this);
         mExpandableListView= (ExpandableListView) findViewById(R.id.elv_myQuiz);
 //        adapter=new MyQuizAdapter(this);
 //        mExpandableListView.setAdapter(adapter);

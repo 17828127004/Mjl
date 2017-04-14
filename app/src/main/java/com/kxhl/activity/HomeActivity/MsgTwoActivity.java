@@ -43,6 +43,7 @@ public class MsgTwoActivity extends Activity {
                         finish();
                     }
                 });
+        Config.setTranslucent(this);
         tv_content = (TextView) findViewById(R.id.tv_msgTow_content);
         tv_name = (TextView) findViewById(R.id.tv_MsgTwo_name);
 

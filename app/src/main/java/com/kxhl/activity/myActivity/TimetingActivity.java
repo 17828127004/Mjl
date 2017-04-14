@@ -60,7 +60,7 @@ public class TimetingActivity  extends Activity{
                    finish();
                     }
                 });
-
+Config.setTranslucent(this);
         mlv=(ListView)findViewById(R.id.lv_myTimeting);
 
     }

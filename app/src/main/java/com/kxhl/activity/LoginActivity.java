@@ -57,6 +57,7 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        Config.setTranslucent(this);
         if (Config.hasInternet(this)) {
         } else {
             mHandler.sendEmptyMessage(0);

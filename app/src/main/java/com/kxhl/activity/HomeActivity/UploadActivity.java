@@ -119,6 +119,7 @@ public class UploadActivity extends Activity {
         super.onCreate(savedInstanceState);
         parentView = getLayoutInflater().inflate(R.layout.activity_photoupload, null);
         setContentView(parentView);
+        Config.setTranslucent(this);
         files = new ArrayList<>();
         getTitleUtil();
         gridView = (GridView) findViewById(R.id.noScrollgridview);

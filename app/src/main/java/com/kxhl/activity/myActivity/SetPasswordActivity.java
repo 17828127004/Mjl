@@ -49,6 +49,7 @@ public class SetPasswordActivity extends Activity {
                 }
             }
         });
+        Config.setTranslucent(this);
         initView();
     }
 

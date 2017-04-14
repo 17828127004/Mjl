@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import com.kxhl.R;
 
+import util.Config;
 import util.TitleUtil;
 
 /**
@@ -27,6 +28,7 @@ public class ServiceActivity extends Activity implements View.OnClickListener{
                         finish();
                     }
                 });
+        Config.setTranslucent(this);
         ll_service=(LinearLayout)findViewById(R.id.ll_service_service);
         ll_service_phone=(LinearLayout)findViewById(R.id.ll_service_phone);
         ll_service.setOnClickListener(this);

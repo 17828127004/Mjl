@@ -72,6 +72,7 @@ public class MsgActivity extends Activity {
 
                     }
                 });
+        Config.setTranslucent(this);
         if(Config.hasInternet(this)){
             dialog=new LoadingDialog(this);
             dialog.show();

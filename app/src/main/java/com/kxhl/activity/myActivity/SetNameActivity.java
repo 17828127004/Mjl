@@ -47,6 +47,7 @@ public class SetNameActivity extends Activity {
                 }
             }
         });
+        Config.setTranslucent(this);
         et_setName = (EditText) findViewById(R.id.et_setName);
     }
 

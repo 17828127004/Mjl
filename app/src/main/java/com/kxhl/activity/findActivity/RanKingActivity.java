@@ -61,6 +61,7 @@ public class RanKingActivity extends Activity {
                         finish();
                     }
                 });
+        Config.setTranslucent(this);
         mLv = (ListView) findViewById(R.id.lv_ranKing);
         if(Config.hasInternet(this)){
             dialog=new LoadingDialog(this);

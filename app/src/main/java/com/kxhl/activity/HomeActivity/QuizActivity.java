@@ -40,6 +40,7 @@ public class QuizActivity extends Activity {
                         startActivity(new Intent(QuizActivity.this,AnswersActivity.class));
                     }
                 });
+        Config.setTranslucent(this);
         btn_quiz=(Button)findViewById(R.id.btn_quiz);
         et_quizContent=(EditText)findViewById(R.id.et_quizContent);
         btn_quiz.setOnClickListener(new View.OnClickListener() {

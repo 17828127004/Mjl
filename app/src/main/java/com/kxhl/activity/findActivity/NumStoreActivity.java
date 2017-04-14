@@ -42,6 +42,7 @@ public class NumStoreActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numstore);
+        Config.setTranslucent(this);
         getService((String) SaveData.get(this,Config.USERID,""));
         getWebView();
         if(!Config.hasInternet(this)){

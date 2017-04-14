@@ -97,6 +97,7 @@ public class LineTimeActivity extends FragmentActivity {
                         finish();
                     }
                 });
+        Config.setTranslucent(this);
         resources = getResources();
         mLocationClient = new AMapLocationClient(this);
         if(Config.hasInternet(this)){

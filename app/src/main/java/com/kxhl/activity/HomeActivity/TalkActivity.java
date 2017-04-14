@@ -70,6 +70,7 @@ public class TalkActivity extends Activity {
                         finish();
                     }
                 });
+        Config.setTranslucent(this);
         lv_talk = (ListView) findViewById(R.id.lv_talk);
     }
 

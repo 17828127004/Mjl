@@ -94,6 +94,7 @@ public class MySettingActivity extends Activity implements View.OnClickListener 
                         finish();
                     }
                 });
+        Config.setTranslucent(this);
         initView();
         initEvent();
         Intent i = getIntent();

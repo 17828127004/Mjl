@@ -89,6 +89,7 @@ public class AnswersActivity extends Activity {
                 showPopup(v);
             }
         });
+        Config.setTranslucent(this);
         lv_answers = (ListView) findViewById(R.id.lv_answers);
     }
 
