@@ -9,7 +9,7 @@ import com.loopj.android.http.SaxAsyncHttpResponseHandler;
 import com.loopj.android.http.SyncHttpClient;
 
 public class KxhlRestClient {
-	private static final String BASE_URL ="http://www.cdjiayibai.com/home";
+	private static final String BASE_URL ="http://www.meijiale123.com/home";
 //	private static final String BASE_URL = "http://hbox.honyork.com/api/";
 	// private static final String BASE_URL =
 	// "http://yujianhezhi-1.wx.jaeapp.com/api/";

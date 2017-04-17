@@ -317,6 +317,7 @@ public class TimetingFragment extends Fragment {
             }
         };
         mLocationClient.setLocationListener(mLocationListener);
+        dialog.dismiss();
     }
 
 

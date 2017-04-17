@@ -180,6 +180,8 @@
         <activity android:name=".activity.HomeActivity.SeeVRActivity"
             android:screenOrientation="portrait"
             android:launchMode="singleTask"></activity>
+        <activity android:name=".activity.myActivity.LineServiceActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
