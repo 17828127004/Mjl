@@ -317,7 +317,7 @@ public class TimetingFragment extends Fragment {
             }
         };
         mLocationClient.setLocationListener(mLocationListener);
-        dialog.dismiss();
+
     }
 
 
@@ -397,6 +397,7 @@ public class TimetingFragment extends Fragment {
         mVp.setAdapter(new MyFragmentPagerAdapter(getChildFragmentManager(), fragments));
         mVp.setOnPageChangeListener(new MyOnPageListener());
         mVp.setCurrentItem(0);
+        dialog.dismiss();
     }
 
 
