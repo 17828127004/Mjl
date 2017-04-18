@@ -5,7 +5,9 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Rect;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -74,9 +76,20 @@ public class AnswersActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getWindow();
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
+                    | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(Color.TRANSPARENT);
+            window.setNavigationBarColor(Color.TRANSPARENT);
+        }
         setContentView(R.layout.activity_answers);
         TitleUtil title = new TitleUtil(this);
-
         title.setTitleName("你问我答").setLeftImage(R.drawable.happy_mine_back).
                 setLeftOnClickListener(new View.OnClickListener() {
                     @Override
@@ -89,7 +102,6 @@ public class AnswersActivity extends Activity {
                 showPopup(v);
             }
         });
-        Config.setTranslucent(this);
         lv_answers = (ListView) findViewById(R.id.lv_answers);
     }
 
@@ -160,7 +172,7 @@ public class AnswersActivity extends Activity {
         mPopup = new PopupWindow(view, w / 2, (int) (h / 5.2));
         mPopup.setFocusable(true);
 //    mPopup.setOutsideTouchable(true);
-        mPopup.showAsDropDown(v, 150, 40);
+        mPopup.showAsDropDown(v, 150, 15);
         ll_popup_answer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

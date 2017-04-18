@@ -2,12 +2,15 @@ package com.kxhl.activity;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -65,6 +68,9 @@ public class RegisterInfoActivity extends Activity {
 tv_babySex.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
+        InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.showSoftInput(v,InputMethodManager.SHOW_FORCED);
+        imm.hideSoftInputFromWindow(v.getWindowToken(), 0); //强制隐藏键盘
         popupWindow=new PopupWindow(layoutView, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT,true);
         LayoutInflater inflater= LayoutInflater.from(RegisterInfoActivity.this);
         View view=inflater.inflate(R.layout.item_popus_sex,null);
@@ -115,14 +121,12 @@ tv_babySex.setOnClickListener(new View.OnClickListener() {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                pushData(mPhone,et_address.getText().toString(),et_babyName.getText().toString(),tv_babyBirthday.getText().toString()
-                ,mchi_sex,et_passWord.getText().toString(),et_name.getText().toString());
-//                pushData(mPhone,
-//                        et_address.getText().toString(),
-//                        et_babyName.getText().toString(), et_babyBirthday.getText().toString(),
-//                        mchi_sex, mSex,
-//                        et_passWord.getText().toString(),
-//                        et_name.getText().toString());
+                if(Config.isEmaill(et_address.getText().toString())|| TextUtils.isEmpty(et_address.getText())){
+                    pushData(mPhone,et_address.getText().toString(),et_babyName.getText().toString(),tv_babyBirthday.getText().toString()
+                            ,mchi_sex,et_passWord.getText().toString(),et_name.getText().toString());
+                }else {
+                    Toast.makeText(RegisterInfoActivity.this,"邮箱格式错误!",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

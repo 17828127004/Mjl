@@ -58,7 +58,8 @@
         <activity
             android:name=".activity.LoginActivity"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"
+            ></activity>
         <service android:name="com.amap.api.location.APSService"></service>
         <activity
             android:name=".activity.RegisterActivity"
